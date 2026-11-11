@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11110f">
+    <meta name="description" content="AUDIRA — premium audio, considered from the first note. Discover headphones made to feel every frequency.">
+    <title>AUDIRA — Feel Every Frequency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+    <script src="public/site-interactions.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-loader" aria-hidden="true"><span>A</span><i></i></div>
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="AUDIRA home">AUDIRA<span class="wordmark-dot">.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="#collection">Collection</a>
+        <a href="#experience">Experience</a>
+        <a href="#technology">Technology</a>
+        <a href="#story">Our story</a>
+        <a href="#reviews">Voices</a>
+      </nav>
+      <a class="header-cta" href="#collection">Find your sound <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+        <div class="hero-progress" aria-hidden="true"><span></span></div>
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> A new perspective on sound</p>
+          <h1 id="hero-title"><span class="hero-title-line"><span>Sound</span></span><span class="hero-title-line"><span>beyond <em>ordinary.</em></span></span></h1>
+          <p class="hero-description">For the moments that move you.<br>For every frequency in between.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#collection">Explore the collection <span aria-hidden="true">↗</span></a>
+            <a class="text-link hero-secondary" href="#story"><span class="play-icon" aria-hidden="true">▶</span> Discover AUDIRA</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <video class="hero-portrait" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=1400&amp;q=88" aria-hidden="true">
+            <source src="/brand.mp4" type="video/mp4">
+          </video>
+          <div class="hero-portrait-shade" aria-hidden="true"></div>
+          <div class="hero-halo" aria-hidden="true"></div>
+          <div class="hero-product-card" data-tilt>
+            <div class="hero-product-frame">
+              <canvas class="hero-model-canvas" aria-hidden="true"></canvas>
+              <img class="hero-headphones-fallback" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=800&amp;q=82" alt="" loading="eager">
+              <div class="model-glint" aria-hidden="true"></div>
+            </div>
+            <div class="hero-product-label"><span>AUDIRA / ONE</span><span>01 — 03</span></div>
+            <p class="hero-product-line">LOUDER<br>THAN LUXURY.</p>
+          </div>
+          <div class="hero-rating"><span>✳ &nbsp;4.9 / 5</span><small>MADE FOR THE MOMENT</small></div>
+          <div class="hero-caption"><span>DESIGNED TO FEEL</span><span>THE AUDIRA ONE</span></div>
+          <div class="hero-stamp" aria-hidden="true"><span>PURE</span><span>FORM</span><b>✳</b><span>PURE</span><span>SOUND</span></div>
+        </div>
+        <div class="hero-bottom">
+          <span>ENGINEERED FOR THE FEELING</span>
+          <a href="#story" aria-label="Scroll to discover AUDIRA">SCROLL TO FEEL <span aria-hidden="true">↓</span></a>
+          <span class="frequency-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <span>EST. IN SOUND — 2025</span>
+        </div>
+      </section>
+
+      <section class="manifesto section-wrap" id="story" aria-labelledby="manifesto-title">
+        <div class="manifesto-side reveal"><p class="eyebrow"><span class="eyebrow-line"></span> A little less noise</p><p class="side-note">MADE FOR YOUR<br>OWN FREQUENCY</p></div>
+        <div class="manifesto-content reveal">
+          <h2 id="manifesto-title">The world is loud.<br><em>Your sound</em> should be<br>entirely <span>your own.</span></h2>
+          <div class="manifesto-bottom">
+            <p>We make thoughtful audio for the everyday extraordinary. Precision you can feel, comfort you forget, and sound that brings you closer to what matters.</p>
+            <a class="text-link" href="#why-audira">Get to know us <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection section-wrap" id="collection" aria-labelledby="collection-title">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> The AUDIRA collection</p><h2 id="collection-title">Find your <em>frequency.</em></h2></div>
+          <p>Three ways to listen.<br>One feeling, unmistakably yours.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <a class="product-image product-one" href="#product-one" aria-label="Explore AUDIRA ONE">
+              <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="AUDIRA ONE wireless over-ear headphones in a sculptural studio setting" loading="lazy">
+              <span class="product-number">01 / EVERYDAY ICON</span><span class="product-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="product-info" id="product-one">
+              <div><p class="product-type">WIRELESS · ADAPTIVE ANC</p><h3>AUDIRA ONE</h3></div><p class="product-price">From $349</p>
+              <p class="product-description">Your world, beautifully uninterrupted. A considered classic made for every day.</p>
+              <ul class="product-features"><li>40-hour listening</li><li>Adaptive noise cancelling</li></ul>
+              <a class="product-link" href="#technology">Meet your everyday <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <a class="product-image product-two" href="#product-pro" aria-label="Explore AUDIRA PRO">
+              <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="AUDIRA PRO precision headphones for focused listening" loading="lazy">
+              <span class="product-number">02 / STUDIO PRECISION</span><span class="product-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="product-info" id="product-pro">
+              <div><p class="product-type">LOSSLESS · STUDIO TUNED</p><h3>AUDIRA PRO</h3></div><p class="product-price">From $499</p>
+              <p class="product-description">Hear the details you’ve been missing. Studio-grade sound, wherever you work.</p>
+              <ul class="product-features"><li>Hi-res certified audio</li><li>Precision acoustic drivers</li></ul>
+              <a class="product-link" href="#technology">Find your focus <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <a class="product-image product-three" href="#product-air" aria-label="Explore AUDIRA AIR">
+              <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Lightweight AUDIRA AIR headphones, designed for life on the move" loading="lazy">
+              <span class="product-number">03 / LIGHT ON YOU</span><span class="product-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="product-info" id="product-air">
+              <div><p class="product-type">ULTRALIGHT · ALL DAY</p><h3>AUDIRA AIR</h3></div><p class="product-price">From $249</p>
+              <p class="product-description">All the feeling, none of the weight. Made to move at your own pace.</p>
+              <ul class="product-features"><li>Featherweight design</li><li>Seamless wireless audio</li></ul>
+              <a class="product-link" href="#technology">Lighten your day <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="price-note">Thoughtful by design. Every AUDIRA piece is made with a two-year limited warranty.</p>
+      </section>
+
+      <section class="listening-story" id="experience" aria-label="The AUDIRA listening experience">
+        <div class="listening-story-stage">
+          <div class="listening-story-frames">
+            <article class="listening-story-frame">
+              <div class="story-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> 01 / Find your quiet</p>
+                <h2>Hear what<br><em>matters.</em></h2>
+                <p>Adaptive quiet gives your favorite sounds the room they deserve. Nothing added. Nothing in the way.</p>
+                <span class="story-spec">AUDIRA ONE <i>·</i> ADAPTIVE NOISE CANCELLING</span>
+              </div>
+              <figure class="story-art">
+                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&amp;fit=crop&amp;w=1400&amp;q=90" alt="Sculptural black over-ear headphones, softly lit against a dark studio background" loading="lazy" decoding="async">
+                <figcaption>01 — The world, at your volume</figcaption>
+              </figure>
+            </article>
+            <article class="listening-story-frame">
+              <div class="story-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> 02 / Feel the detail</p>
+                <h2>Every note,<br><em>in focus.</em></h2>
+                <p>Carefully tuned drivers open up the small things: the breath before a lyric, the warmth beneath a chord.</p>
+                <span class="story-spec">AUDIRA PRO <i>·</i> STUDIO-TUNED, HIGH-RES AUDIO</span>
+              </div>
+              <figure class="story-art">
+                <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&amp;fit=crop&amp;w=1400&amp;q=90" alt="Precision headphones presented in a refined, low-key studio setting" loading="lazy" decoding="async">
+                <figcaption>02 — Made for the details</figcaption>
+              </figure>
+            </article>
+            <article class="listening-story-frame">
+              <div class="story-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> 03 / Move with feeling</p>
+                <h2>Light on you.<br><em>All in.</em></h2>
+                <p>Featherweight comfort and effortless wireless listening keep you close to the music, wherever the day goes.</p>
+                <span class="story-spec">AUDIRA AIR <i>·</i> LIGHTWEIGHT, ALL-DAY COMFORT</span>
+                <a class="text-link" href="#collection">Find your AUDIRA <span aria-hidden="true">↗</span></a>
+              </div>
+              <figure class="story-art">
+                <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&amp;fit=crop&amp;w=1400&amp;q=90" alt="Lightweight wireless headphones designed for everyday listening" loading="lazy" decoding="async">
+                <figcaption>03 — Sound that moves with you</figcaption>
+              </figure>
+            </article>
+          </div>
+          <div class="story-progress" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="story-scroll-note">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></p>
+        </div>
+      </section>
+
+      <section class="technology section-wrap" id="technology" aria-labelledby="technology-title">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> Considered down to the detail</p><h2 id="technology-title">Feel-good <em>engineering.</em></h2></div>
+          <p>Technology with a lighter touch.<br>Performance you feel, not see.</p>
+        </div>
+        <div class="technology-grid">
+          <article class="tech-card reveal"><span class="tech-icon" aria-hidden="true">⌁</span><span class="tech-index">01 / QUIET</span><h3>Your quiet,<br>on demand.</h3><p>Adaptive noise cancelling reads your surroundings and gently turns down the world.</p><span class="tech-arrow" aria-hidden="true">↗</span></article>
+          <article class="tech-card reveal"><span class="tech-icon" aria-hidden="true">◉</span><span class="tech-index">02 / CLARITY</span><h3>Every detail.<br>Every time.</h3><p>Carefully tuned drivers bring depth, warmth and the smallest details into focus.</p><span class="tech-arrow" aria-hidden="true">↗</span></article>
+          <article class="tech-card reveal"><span class="tech-icon" aria-hidden="true">◷</span><span class="tech-index">03 / ENDURANCE</span><h3>Stay in the<br>feeling longer.</h3><p>Up to 40 hours of listening, with a quick-charge boost when your day calls for more.</p><span class="tech-arrow" aria-hidden="true">↗</span></article>
+          <article class="tech-card reveal"><span class="tech-icon" aria-hidden="true">⌒</span><span class="tech-index">04 / EASE</span><h3>Made for<br>the long way.</h3><p>Feather-soft cushions and a balanced fit stay comfortable, from first note to last.</p><span class="tech-arrow" aria-hidden="true">↗</span></article>
+        </div>
+      </section>
+
+      <section class="quote-band" aria-label="AUDIRA design philosophy">
+        <div class="quote-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="eyebrow"><span class="eyebrow-line"></span> A note on what matters</p>
+        <blockquote>“The best technology doesn’t ask for attention.<br><em>It gives it back to you.</em>”</blockquote>
+        <span class="quote-credit">THE AUDIRA DESIGN PRINCIPLE</span>
+      </section>
+
+      <section class="why section-wrap" id="why-audira" aria-labelledby="why-title">
+        <div class="why-image reveal">
+          <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="A quiet moment immersed in music" loading="lazy">
+          <span class="image-caption">A MOMENT, ENTIRELY YOURS.</span>
+        </div>
+        <div class="why-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Why AUDIRA?</p>
+          <h2 id="why-title">Made for living.<br><em>Made for feeling.</em></h2>
+          <p class="why-intro">The commute that clears your head. The song that takes you back. The pause that lets you begin again.</p>
+          <div class="why-list">
+            <div><span>01</span><h3>Everyday, elevated</h3><p>Intuitive, considered audio that fits the rhythm of real life.</p></div>
+            <div><span>02</span><h3>Comfort, considered</h3><p>Thoughtful proportions and softer materials, made for longer listens.</p></div>
+            <div><span>03</span><h3>Less, but better</h3><p>Quietly enduring design, with nothing added that doesn’t belong.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews section-wrap" id="reviews" aria-labelledby="reviews-title">
+        <div class="reviews-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Heard in good company</p>
+          <h2 id="reviews-title">A feeling <em>shared.</em></h2>
+          <div class="slider-controls">
+            <button type="button" class="slider-button previous" aria-label="Show previous testimonial">←</button>
+            <span class="slide-count" aria-live="polite">01 <i>/</i> 03</span>
+            <button type="button" class="slider-button next" aria-label="Show next testimonial">→</button>
+          </div>
+        </div>
+        <div class="testimonial-track" aria-live="polite">
+          <article class="testimonial is-active"><span class="quote-mark" aria-hidden="true">“</span><blockquote>I put them on, and the rest of the world just softened. I didn’t know headphones could feel like that.</blockquote><div class="reviewer"><span class="reviewer-avatar avatar-one" aria-hidden="true">JM</span><span><b>Jordan M.</b><small>AUDIRA ONE · VERIFIED LISTENER</small></span><span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span></div></article>
+          <article class="testimonial"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Every record has something new in it now. The sound is detailed without ever feeling like too much.</blockquote><div class="reviewer"><span class="reviewer-avatar avatar-two" aria-hidden="true">AL</span><span><b>Alex L.</b><small>AUDIRA PRO · VERIFIED LISTENER</small></span><span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span></div></article>
+          <article class="testimonial"><span class="quote-mark" aria-hidden="true">“</span><blockquote>So light I forget they’re on. Beautifully made, and somehow even better on a very long flight.</blockquote><div class="reviewer"><span class="reviewer-avatar avatar-three" aria-hidden="true">SK</span><span><b>Sam K.</b><small>AUDIRA AIR · VERIFIED LISTENER</small></span><span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span></div></article>
+        </div>
+        <p class="demo-disclaimer">Demo testimonials shown for presentation purposes.</p>
+      </section>
+
+      <section class="newsletter" id="contact" aria-labelledby="newsletter-title">
+        <div class="newsletter-content reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Letters worth listening to</p>
+          <h2 id="newsletter-title">Stay connected<br>to <em>sound.</em></h2>
+          <p>New releases, thoughtful stories, and little things worth hearing. Only when we have something to say.</p>
+          <form class="newsletter-form" novalidate>
+            <label class="sr-only" for="email-address">Your email address</label>
+            <input id="email-address" name="email" type="email" autocomplete="email" placeholder="Your email address" required>
+            <button type="submit">Count me in <span aria-hidden="true">↗</span></button>
+          </form>
+          <p class="form-message" aria-live="polite" role="status"></p>
+          <small class="privacy-note">A quiet inbox, we promise. Unsubscribe whenever you like.</small>
+        </div>
+        <div class="newsletter-art" aria-hidden="true"><span>A</span><span>U</span><span>D</span><span>I</span><span>R</span><span>A</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand"><a class="wordmark" href="#top" aria-label="AUDIRA home">AUDIRA<span class="wordmark-dot">.</span></a><p>For the moments that move you.<br>Feel every frequency.</p></div>
+        <div class="footer-column"><span>EXPLORE</span><a href="#collection">The collection</a><a href="#technology">Our technology</a><a href="#story">Our story</a></div>
+        <div class="footer-column"><span>HERE TO HELP</span><a href="mailto:hello@audira.audio">Get in touch</a><a href="mailto:care@audira.audio?subject=Support">Product support</a><a href="#contact">Join the list</a></div>
+        <div class="footer-column footer-social"><span>STAY IN THE MOMENT</span><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest ↗</a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube ↗</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2025 AUDIRA AUDIO. MADE WITH INTENTION.</span><a href="#top">BACK TO THE BEGINNING ↑</a><span>FEEL EVERY FREQUENCY.</span></div>
+    </footer>
+    <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light theme"><span class="theme-toggle-icon" aria-hidden="true">◐</span><span class="theme-toggle-label">Light mode</span></button>
+    <button class="motion-toggle" type="button" aria-pressed="false" aria-label="Motion off — enable animations"><span class="motion-indicator" aria-hidden="true"></span><span class="motion-label">Motion off</span><span class="motion-action">Enable</span></button>
+    <script type="module">
+      import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js";
+      window.THREE = THREE;
+      await import("./public/three-scene.js");
+    </script>
+  </body>
+</html>
